@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 								
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+<class name="hibernateFirstProject.Product" table="product_details">
+<id name="productId" column="product_Id"><generator class="increment"></generator></id>
+<property name="productName"></property>
+<property name="productCost" column="product_cost"></property>
+<property name="description" column="description"></property>
+</class>
+</hibernate-mapping>
+
+<!-- This .xml file provides communication(mapping) between database and Product Class -->
